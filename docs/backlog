@@ -1,1 +1,36 @@
+# Product Backlog
 
+## Priority 1 - MVP Foundation
+
+| ID | Item | Priority | Status |
+|---|---|---|---|
+| BL-001 | Create GitHub repository | High | To Do |
+| BL-002 | Create README | High | To Do |
+| BL-003 | Define MVP scope | High | To Do |
+| BL-004 | Define user stories | High | To Do |
+| BL-005 | Define database schema | High | To Do |
+| BL-006 | Define architecture | High | To Do |
+
+## Priority 2 - Application Setup
+
+| ID | Item | Priority | Status |
+|---|---|---|---|
+| BL-007 | Create Next.js app | High | To Do |
+| BL-008 | Install Tailwind CSS | High | To Do |
+| BL-009 | Install Prisma | High | To Do |
+| BL-010 | Configure PostgreSQL | High | To Do |
+| BL-011 | Create first Prisma schema | High | To Do |
+
+## Priority 3 - Core Features
+
+| ID | Item | Priority | Status |
+|---|---|---|---|
+| BL-012 | Build project list page | High | To Do |
+| BL-013 | Build create project form | High | To Do |
+| BL-014 | Build project details page | High | To Do |
+| BL-015 | Build risk register page | High | To Do |
+| BL-016 | Build add risk form | High | To Do |
+| BL-017 | Implement risk severity calculation | High | To Do |
+| BL-018 | Build blocker tracking | Medium | To Do |
+| BL-019 | Build milestone tracking | Medium | To Do |
+| BL-020 | Build weekly status report page | Medium | To Do |
