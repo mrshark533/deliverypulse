@@ -1,1 +1,46 @@
+# Architecture
 
+## Version 1: Local MVP Architecture
+
+DeliveryPulse will initially be built as a full-stack web application using Next.js.
+
+## Components
+
+### Frontend
+
+The frontend will be built with Next.js, TypeScript, and Tailwind CSS.
+
+Responsibilities:
+
+- Display project dashboard
+- Display project details
+- Provide forms for projects, risks, blockers, and milestones
+- Display weekly status report
+
+### Backend
+
+The backend will use Next.js API routes.
+
+Responsibilities:
+
+- Handle CRUD operations
+- Validate request data
+- Apply business logic
+- Calculate risk severity
+- Calculate project health
+
+### Database
+
+The database will use PostgreSQL with Prisma ORM.
+
+Responsibilities:
+
+- Store projects
+- Store risks
+- Store blockers
+- Store milestones
+- Store status reports
+
+## Initial Architecture Diagram
+
+User Browser >>> Next.js Frontend >>> Next.js API Routes >>> Prisma ORM >>> PostgreSQL Database
