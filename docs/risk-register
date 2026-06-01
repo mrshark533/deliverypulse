@@ -1,1 +1,9 @@
+# DeliveryPulse Project Risk Register
 
+| ID | Risk | Probability | Impact | Severity | Mitigation |
+|---|---|---|---|---|---|
+| R-001 | Scope becomes too large for MVP | High | High | High | Keep authentication, AWS, AI, and integrations out of v1 |
+| R-002 | Too much time spent on UI polish | Medium | Medium | Medium | Use simple Tailwind components and focus on functionality |
+| R-003 | Database design changes too often | Medium | Medium | Medium | Start with simple core entities and refine later |
+| R-004 | AWS learning distracts from MVP | Medium | High | High | Keep AWS as v2 after local MVP is functional |
+| R-005 | Project is abandoned before deployment | Medium | High | High | Work in small weekly deliverables |
