@@ -1,1 +1,70 @@
+# Database Schema Draft
 
+## Entity: Project
+
+| Field | Type | Notes |
+|---|---|---|
+| id | UUID | Primary key |
+| name | String | Project name |
+| description | Text | Project description |
+| status | Enum | Planned, Active, On Hold, Completed |
+| health | Enum | Green, Yellow, Red |
+| startDate | Date | Optional |
+| targetDate | Date | Optional |
+| createdAt | DateTime | Auto-generated |
+| updatedAt | DateTime | Auto-generated |
+
+## Entity: Risk
+
+| Field | Type | Notes |
+|---|---|---|
+| id | UUID | Primary key |
+| projectId | UUID | Foreign key to Project |
+| title | String | Risk title |
+| description | Text | Risk details |
+| probability | Enum | Low, Medium, High |
+| impact | Enum | Low, Medium, High |
+| severity | Enum | Low, Medium, High |
+| owner | String | Risk owner |
+| mitigationPlan | Text | Mitigation details |
+| status | Enum | Open, Monitoring, Mitigated, Closed |
+| createdAt | DateTime | Auto-generated |
+| updatedAt | DateTime | Auto-generated |
+
+## Entity: Blocker
+
+| Field | Type | Notes |
+|---|---|---|
+| id | UUID | Primary key |
+| projectId | UUID | Foreign key to Project |
+| title | String | Blocker title |
+| description | Text | Blocker details |
+| owner | String | Blocker owner |
+| status | Enum | Open, In Progress, Resolved |
+| createdAt | DateTime | Auto-generated |
+| updatedAt | DateTime | Auto-generated |
+
+## Entity: Milestone
+
+| Field | Type | Notes |
+|---|---|---|
+| id | UUID | Primary key |
+| projectId | UUID | Foreign key to Project |
+| name | String | Milestone name |
+| targetDate | Date | Milestone target date |
+| status | Enum | Not Started, In Progress, Completed, Delayed |
+| createdAt | DateTime | Auto-generated |
+| updatedAt | DateTime | Auto-generated |
+
+## Entity: StatusReport
+
+| Field | Type | Notes |
+|---|---|---|
+| id | UUID | Primary key |
+| projectId | UUID | Foreign key to Project |
+| summary | Text | Weekly summary |
+| accomplishments | Text | Completed work |
+| risksSummary | Text | Risk overview |
+| blockersSummary | Text | Blocker overview |
+| nextSteps | Text | Upcoming actions |
+| createdAt | DateTime | Auto-generated |
