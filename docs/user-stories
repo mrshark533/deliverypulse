@@ -1,1 +1,86 @@
+# User Stories
 
+## Project Management
+
+### US-001: Create Project 
+
+As a Project Manager, I want to create a new project so that I can track its delivery health. 
+
+Acceptance Criteria: 
+
+- User can enter project name
+- User can enter project description
+- User can select project status
+- User can save the project
+- New project appears in the project list
+
+### US-002: View Project Dashboard
+
+As a Project Manager, I want to view a dashboard of all projects so that I can quickly understand overall delivery health.
+
+Acceptance Criteria:
+
+- User can see all projects
+- Each project displays name, status, health, and target date
+- Projects are grouped or visually makred by health: Green, Yellow, Red
+
+### US-003: Add Risk
+
+As a Project Manager, I want to add risks to a project so that I can track potential delivery issues.
+
+Acceptance Criteria:
+
+- User can enter risk title
+- User can enter description
+- User can select probability: Low, Medium, High
+- User can select impact: Low, Medium, High
+- User can assign an owner
+- User can add a mitigation plan
+- Risk is linked to a project
+
+### US-004: Calculate Risk Severity
+
+As a Project Manager, I want the system to calculate risk severity so that I can prioritize risks consistently.
+
+Acceptance Criteria:
+
+- Severity is calculated based on probability and impact
+- High probability + high impact creates high severity
+- Low probability + low impact creates low severity
+- Severity is visible in the risk register
+
+### US-005: Add Blocker
+
+As a Project Manager, I want to add blockers to a project so that I can track active impediments.
+
+Acceptance Criteria:
+
+- User can enter blocker title
+- User can enter description
+- User can assign owner
+- User can set status: Open, In Progress, Resolved
+- Blocker is linked to a project
+
+### US-006: Add Milestone
+
+As a Projecct Manager, I want to add milestone so that I can track important delivery dates.
+
+Acceptance Criteria:
+
+- User can enter milestone name
+- User can enter target date
+- User can set status: Not Started, In Progress, Completed, Delayed
+- Milestone is linked to a project
+
+### US-007: Generate Weekly Status Report
+
+As a Project Manager, I want to generate a weekly status report so that I can share project updates with stakeholders.
+
+Acceptance Criteria:
+
+- Report includes project name
+- Report includes project health
+- Report includes open risks
+- Report includes open blockers
+- Report includes milestone status
+- Report includes next steps
