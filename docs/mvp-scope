@@ -1,1 +1,66 @@
+# MVP Scope
 
+## MVP Goal
+
+The goal of the MVP is to build a working project health dashboard that allows a user to create a software project, track risks and blockers, monitor milestones, and generate a basic weekly status report.
+
+## In Scope
+
+### Project Management
+
+- Create a project
+- View all projects
+- View project details
+- Edit project status
+- Assign project health: Green, Yellow, Red
+
+### Risk Management
+
+- Add a risk to a project
+- Set risk probability
+- Set risk impact
+- Calculate risk severity
+- Assign a risk owner
+- Set mitigation plan
+- Update risk status
+
+### Blocker Management
+
+- Add a blocker
+- Assign owner
+- Set blocker status
+- Mark blocker as resolved
+
+### Milestone Tracking
+
+- Add milestones
+- Set target dates
+- Track completion status
+
+### Status Reporting
+
+- Generate a weekly report based on project data
+- Include project health, risks, blockers, milestones, and next steps
+
+## Out of Scope for MVP
+
+- User authentication
+- Role-based access control
+- Jira integration
+- Email notifications
+- AI-generated reports
+- Advanced analytics
+- AWS deployment
+- Mobile app
+- Multi-tenant workspaces
+
+## Success Criteria
+
+The MVP is successful when a user can:
+
+1. Create a project
+2. Add at least one risk
+3. Add at least one blocker
+4. Add at least one milestone
+5. View overall project health
+6. Generate a simple weekly status report
